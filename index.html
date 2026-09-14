@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Echoes of Life — prototype archive terminal.">
+    <title>Echoes of Life // Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="bunker" aria-label="Echoes of Life archive terminal">
+        <div class="terminal" id="terminal">
+            <header class="terminal-header">
+                <span>EOL // BUNKER ARCHIVE</span>
+                <span class="header-status">LOCAL NODE: 01</span>
+            </header>
+
+            <section class="screen" id="screen" tabindex="0" aria-live="polite">
+                <div class="scanlines" aria-hidden="true"></div>
+
+                <div class="boot-content" id="bootContent">
+                    <p class="system-label">UNKNOWN SYSTEM // RECOVERY MODE</p>
+                    <h1>ECHOES<br>OF LIFE</h1>
+                    <p class="boot-message" id="bootMessage">INITIALIZING ARCHIVE...</p>
+
+                    <div class="loading-track" aria-label="System loading progress">
+                        <div class="loading-bar" id="loadingBar"></div>
+                    </div>
+
+                    <p class="loading-percent" id="loadingPercent">00%</p>
+                    <a class="access-button" id="accessButton" href="#archive-menu" hidden>
+                        PRESS ENTER OR CLICK TO ACCESS
+                    </a>
+                </div>
+
+                <div class="archive-menu" id="archive-menu">
+                    <p class="system-label">ACCESS GRANTED // USER: UNKNOWN</p>
+                    <h1 class="menu-title">ARCHIVE DIRECTORY</h1>
+                    <nav class="file-list" aria-label="Archive sections">
+                        <button type="button" data-file="WORLD DATABASE">[01] WORLD DATABASE</button>
+                        <button type="button" data-file="WEAPONS">[02] WEAPONS</button>
+                        <button type="button" data-file="INCIDENT LOG / DEVLOG">[03] INCIDENT LOG / DEVLOG</button>
+                        <button type="button" data-file="SYSTEM">[04] SYSTEM</button>
+                    </nav>
+                    <p class="terminal-response" id="terminalResponse">SELECT A FILE.</p>
+                    <p class="keyboard-help">[ ↑ ↓ ] SELECT &nbsp; [ ENTER ] OPEN &nbsp; [ ESC ] RETURN</p>
+                </div>
+            </section>
+
+            <footer class="terminal-footer">
+                <span>STATUS: <strong id="systemStatus">BOOTING</strong></span>
+                <span>KEYBOARD ENABLED // BUILD: 0.0.3</span>
+            </footer>
+        </div>
+
+        <p class="bunker-caption">PROTOTYPE TERMINAL // NO EXTERNAL SIGNAL</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
