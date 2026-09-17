@@ -20,7 +20,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
       - name: Inject reliable audio fix
-        run: python - <<'PY'
+        run: |
+          python - <<'PY'
           from pathlib import Path
           p = Path('index.html')
           s = p.read_text(encoding='utf-8')
