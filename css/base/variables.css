@@ -1,0 +1,20 @@
+:root{
+  --bg:#080a09;
+  --panel:#101412;
+  --panel-2:#151a17;
+  --line:#3a433d;
+  --line-soft:#252c28;
+  --text:#d6d8cf;
+  --muted:#858d83;
+  --dim:#59615a;
+  --green:#93a98d;
+  --green-bright:#b5c7a8;
+  --amber:#d9953d;
+  --amber-soft:#9b672e;
+  --red:#a35b50;
+  --shadow:#030403;
+  --pixel-font:"Pixel Local","Pixelify Sans","Courier New",monospace;
+  --body-font:"Trebuchet MS",Arial,sans-serif;
+  --max:1180px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}

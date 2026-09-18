@@ -1,0 +1,7 @@
+@font-face{font-family:"Pixel Local";src:url("../../assets/fonts/pixel-font.woff2") format("woff2");font-display:swap}
+body{background:var(--bg);color:var(--text);font-family:var(--body-font);line-height:1.65}
+h1,h2,h3,.brand-mini,.section-code,.card-tag,.terminal-nav,.terminal-top,.terminal-bottom,.status-card,.filter,.team-card span,.footer,.boot-screen,.tiny-control{font-family:var(--pixel-font)}
+h1,h2,h3,p{margin-top:0}
+h2{font-size:clamp(2rem,5vw,4.2rem);line-height:1.05;letter-spacing:.03em}
+h3{line-height:1.15}
+p{color:#b5bbb2}

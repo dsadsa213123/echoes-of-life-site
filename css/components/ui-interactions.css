@@ -1,0 +1,129 @@
+/* V2.3 — global UI interactions */
+
+.site-nav a,
+.site-brand,
+button,
+a.pixel-button,
+a.text-link,
+a.back-link,
+a.state-card,
+a.type-card,
+a.category-card,
+a.contact-card,
+a.weapon-choice,
+.mechanic,
+.filter {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.site-nav a,
+.pixel-button,
+.text-link,
+.back-link,
+.filter,
+.menu-btn,
+.sound-btn,
+.site-music,
+.state-card,
+.type-card,
+.category-card,
+.contact-card,
+.weapon-choice,
+.mechanic,
+button {
+  transition:
+    transform 160ms steps(2, end),
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease;
+}
+
+.site-nav a:hover,
+.pixel-button:hover,
+.back-link:hover,
+.filter:hover,
+.menu-btn:hover,
+.sound-btn:hover,
+.site-music:hover,
+.state-card:hover,
+.type-card:hover,
+.category-card:hover,
+.contact-card:hover,
+.weapon-choice:hover,
+.mechanic:hover {
+  filter: brightness(1.08);
+}
+
+.site-nav a:hover {
+  transform: translateY(-1px);
+}
+
+.site-nav a:active,
+.pixel-button:active,
+.back-link:active,
+.filter:active,
+.menu-btn:active,
+.sound-btn:active,
+.site-music:active,
+.state-card:active,
+.type-card:active,
+.category-card:active,
+.contact-card:active,
+.weapon-choice:active,
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none !important;
+}
+
+.state-card:hover,
+.type-card:hover,
+.category-card:hover,
+.contact-card:hover,
+.weapon-choice:hover {
+  animation: uiCardFloat 700ms steps(3, end);
+}
+
+.category-card:hover .count,
+.state-card:hover .count,
+.type-card:hover .count,
+.weapon-choice:hover .weapon-choice-index {
+  animation: uiBlink 520ms steps(2, end) 1;
+}
+
+.mechanic:hover {
+  transform: translateY(-2px);
+}
+
+@keyframes uiCardFloat {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-3px); }
+  100% { transform: translateY(-4px); }
+}
+
+@keyframes uiBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .42; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav a,
+  .pixel-button,
+  .text-link,
+  .back-link,
+  .filter,
+  .menu-btn,
+  .sound-btn,
+  .site-music,
+  .state-card,
+  .type-card,
+  .category-card,
+  .contact-card,
+  .weapon-choice,
+  .mechanic,
+  button {
+    transition: none;
+    animation: none !important;
+  }
+}

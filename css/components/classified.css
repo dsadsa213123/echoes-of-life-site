@@ -1,0 +1,1 @@
+.redacted{letter-spacing:.16em;color:#777f76!important}.classified-card:after{content:"CLASSIFIED";position:absolute;right:13px;top:13px;font:8px var(--pixel-font);color:#5c655d;border:1px solid #303730;padding:4px}.classified-line{position:relative}.classified-line:before{content:"";display:inline-block;width:5px;height:5px;background:#5b655d;margin-right:7px}

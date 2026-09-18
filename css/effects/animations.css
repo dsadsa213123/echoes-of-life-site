@@ -1,0 +1,11 @@
+@keyframes blink{50%{opacity:.45}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.reveal{animation:fadeUp .6s ease both}
+
+@keyframes pixelPulse{0%,100%{opacity:.72;transform:translateY(0)}50%{opacity:1;transform:translateY(-1px)}}
+@keyframes softGlitch{0%,93%,100%{transform:translate(0)}94%{transform:translate(1px,-1px)}96%{transform:translate(-1px,1px)}}
+.pixel-button,.filter,.menu-btn,.site-music,.back-link{transition:transform .16s steps(2,end),border-color .2s,background .2s,color .2s,box-shadow .2s}
+.pixel-button:active,.filter:active,.menu-btn:active,.site-music:active{transform:translate(2px,2px);box-shadow:none}
+.state-card:hover h3,.type-card:hover h3,.contact-card:hover h3{animation:softGlitch .9s steps(1,end)}
+.empty-card .count{animation:pixelPulse 2.6s steps(2,end) infinite}
+.weapon-frame img{transition:filter .35s ease,transform .45s ease}.weapon-record:hover .weapon-frame img{transform:scale(1.01);filter:contrast(1.04) saturate(.95)}

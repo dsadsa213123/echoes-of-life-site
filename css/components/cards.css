@@ -1,0 +1,82 @@
+.item-card,.mechanic,.base-card,.team-card,.lore-card{transition:transform .25s var(--ease),border-color .25s,background .25s}.item-card:hover,.mechanic:hover,.base-card:hover,.team-card:hover,.lore-card:hover{transform:translateY(-3px);border-color:#52604f;background:#111712}
+/* Temporary CSS weapon silhouettes — placeholders until final pixel-art assets are added. */
+.weapon-category-card{position:relative;overflow:hidden;min-height:250px;padding-top:18px}
+.weapon-category-card .css-weapon{height:105px;margin:2px 0 10px;position:relative;transform-origin:center;filter:drop-shadow(0 7px 5px rgba(0,0,0,.45))}
+.css-weapon{position:relative;width:280px;max-width:82%;height:120px;margin:auto;image-rendering:pixelated}
+.css-weapon:before,.css-weapon:after{content:"";position:absolute;display:block}
+/* shared pixel-ish construction */
+.css-glock-17:before{width:150px;height:34px;left:54px;top:40px;background:#5e655c;box-shadow:0 0 0 3px #272c27, 24px 34px 0 -2px #303630, 46px 24px 0 -5px #7b8175}
+.css-glock-17:after{width:30px;height:54px;left:104px;top:58px;background:#454b45;transform:skew(-10deg);box-shadow:0 0 0 3px #252a25}
+.css-m1911:before{width:170px;height:28px;left:45px;top:42px;background:#666b61;box-shadow:0 0 0 3px #292d29, 0 18px 0 -2px #444a43}
+.css-m1911:after{width:30px;height:55px;left:112px;top:60px;background:#3d433d;transform:skew(-14deg);box-shadow:0 0 0 3px #252a25}
+.css-beretta-92fs:before{width:155px;height:31px;left:48px;top:40px;background:#60665d;box-shadow:0 0 0 3px #292d29, 26px 20px 0 -4px #7a8075}
+.css-beretta-92fs:after{width:33px;height:53px;left:105px;top:60px;background:#414740;transform:skew(-8deg);box-shadow:0 0 0 3px #252a25}
+.css-ak-74:before{width:218px;height:27px;left:28px;top:45px;background:#61675e;box-shadow:0 0 0 3px #272c27, 18px 23px 0 -3px #8a6546, 78px 25px 0 -6px #41463f}
+.css-ak-74:after{width:38px;height:63px;left:100px;top:65px;background:#79583d;transform:skew(-12deg);box-shadow:0 0 0 3px #252a25}
+.css-m4a1:before{width:225px;height:22px;left:24px;top:47px;background:#70766c;box-shadow:0 0 0 3px #292e29, 12px 18px 0 -4px #3d433d, 108px 20px 0 -7px #242a25}
+.css-m4a1:after{width:37px;height:60px;left:105px;top:65px;background:#414740;transform:skew(-9deg);box-shadow:0 0 0 3px #252a25}
+.css-m16a4:before{width:235px;height:19px;left:18px;top:49px;background:#6d7269;box-shadow:0 0 0 3px #292e29, 6px 19px 0 -5px #464c45, 124px 20px 0 -7px #262b27}
+.css-m16a4:after{width:36px;height:62px;left:100px;top:66px;background:#454a43;transform:skew(-9deg);box-shadow:0 0 0 3px #252a25}
+.css-akm:before{width:220px;height:29px;left:24px;top:44px;background:#7b6248;box-shadow:0 0 0 3px #292d28, 26px 22px 0 -3px #806349, 92px 26px 0 -7px #444941}
+.css-akm:after{width:39px;height:64px;left:101px;top:67px;background:#6b5039;transform:skew(-12deg);box-shadow:0 0 0 3px #252a25}
+.css-g36:before{width:215px;height:25px;left:30px;top:45px;background:#50584f;box-shadow:0 0 0 3px #272c27, 12px 21px 0 -5px #333a33, 120px 18px 0 -6px #252a25}
+.css-g36:after{width:40px;height:61px;left:104px;top:65px;background:#343b34;transform:skew(-7deg);box-shadow:0 0 0 3px #252a25}
+.css-mp5:before{width:190px;height:30px;left:42px;top:42px;background:#4c534c;box-shadow:0 0 0 3px #252a25, 18px 22px 0 -4px #343a34}
+.css-mp5:after{width:34px;height:58px;left:111px;top:64px;background:#373d37;transform:skew(-11deg);box-shadow:0 0 0 3px #242924}
+.css-ump45:before{width:185px;height:31px;left:44px;top:42px;background:#5b625a;box-shadow:0 0 0 3px #292e29, 4px 22px 0 -3px #343a34}
+.css-ump45:after{width:37px;height:60px;left:110px;top:64px;background:#414741;transform:skew(-12deg);box-shadow:0 0 0 3px #252a25}
+.css-p90:before{width:198px;height:28px;left:38px;top:43px;background:#545b54;box-shadow:0 0 0 3px #272c27, 28px 20px 0 -5px #343a34, 120px 19px 0 -7px #252a25}
+.css-p90:after{width:32px;height:55px;left:114px;top:65px;background:#343a34;transform:skew(-5deg);box-shadow:0 0 0 3px #242924}
+.css-m40:before{width:238px;height:18px;left:16px;top:49px;background:#676d64;box-shadow:0 0 0 3px #292e29, 0 19px 0 -5px #464c45}
+.css-m40:after{width:38px;height:61px;left:101px;top:66px;background:#765b42;transform:skew(-10deg);box-shadow:0 0 0 3px #252a25}
+.css-svd:before{width:240px;height:21px;left:15px;top:48px;background:#5f665d;box-shadow:0 0 0 3px #292e29, 0 20px 0 -5px #795d43, 115px 20px 0 -6px #3e443d}
+.css-svd:after{width:39px;height:63px;left:100px;top:66px;background:#70533b;transform:skew(-11deg);box-shadow:0 0 0 3px #252a25}
+.css-pkm:before{width:228px;height:31px;left:22px;top:42px;background:#4e554e;box-shadow:0 0 0 3px #252a25, 18px 24px 0 -4px #303630, 151px 17px 0 -5px #252a25}
+.css-pkm:after{width:43px;height:61px;left:101px;top:66px;background:#3b413b;transform:skew(-12deg);box-shadow:0 0 0 3px #232823}
+.css-m249:before{width:225px;height:28px;left:24px;top:43px;background:#5a6159;box-shadow:0 0 0 3px #272c27, 0 22px 0 -5px #333a33, 135px 21px 0 -6px #252a25}
+.css-m249:after{width:42px;height:61px;left:103px;top:66px;background:#3c433c;transform:skew(-8deg);box-shadow:0 0 0 3px #252a25}
+.css-rpg-7:before{width:220px;height:17px;left:26px;top:48px;background:#666d64;box-shadow:0 0 0 3px #292e29, 46px 18px 0 -4px #4a5149}
+.css-rpg-7:after{width:47px;height:47px;left:111px;top:67px;border:6px solid #454c45;box-sizing:border-box;transform:skew(-8deg);background:#252b26}
+.css-flamethrower:before{width:190px;height:33px;left:40px;top:39px;background:#76543c;box-shadow:0 0 0 3px #292d28, 25px 26px 0 -4px #444941}
+.css-flamethrower:after{width:44px;height:62px;left:104px;top:65px;background:#454b44;transform:skew(-10deg);box-shadow:0 0 0 3px #252a25}
+.css-minigun:before{width:190px;height:32px;left:42px;top:40px;background:#525950;box-shadow:0 0 0 3px #272c27, 4px 25px 0 -4px #303630}
+.css-minigun:after{width:54px;height:62px;left:105px;top:65px;background:#3a403a;transform:skew(-9deg);box-shadow:0 0 0 3px #252a25, 58px -21px 0 -17px #72786e, 68px -21px 0 -17px #72786e}
+
+.weapon-art-large .css-weapon{transform:scale(1.35)}
+@media(max-width:650px){.weapon-art-large .css-weapon{transform:scale(.95)}.weapon-category-card .css-weapon{transform:scale(.9)}}
+
+/* V2.2.8 weapon/state cards */
+.state-grid,.type-grid,.contact-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.state-card,.type-card,.contact-card{position:relative;display:block;padding:30px;background:#0f130f;border:1px solid #2e362f;min-height:230px;overflow:hidden;transition:transform .24s ease,border-color .24s ease,background .24s ease,box-shadow .24s ease}
+.state-card:before,.type-card:before,.contact-card:before{content:"";position:absolute;inset:6px;border:1px solid rgba(180,190,178,.05);pointer-events:none}
+.state-card:hover,.type-card:hover,.contact-card:hover{transform:translateY(-4px);border-color:#687864;background:#141914;box-shadow:8px 8px 0 rgba(0,0,0,.22)}
+.state-card .count,.type-card .count,.contact-card>span:first-child{display:block;font:10px var(--pixel);color:var(--amber);letter-spacing:.14em}
+.state-code{margin-top:34px;font:10px var(--pixel);color:#7c8679;letter-spacing:.18em}
+.state-card h3,.type-card h3,.contact-card h3{margin:7px 0 12px;font:2rem var(--pixel);color:#e0e0d6}
+.state-card p,.type-card p,.contact-card p{max-width:520px;color:#969e94;margin:0}
+.state-arrow{position:absolute;left:30px;bottom:22px;font:9px var(--pixel);letter-spacing:.12em;color:#899487}
+.empty-card{opacity:.74}
+.empty-card:hover{opacity:1}
+.weapon-record-grid{max-width:1180px;margin:0 auto;display:grid;gap:24px}
+.weapon-record{background:#0f130f;border:1px solid #2e362f}
+.weapon-frame{padding:10px;border-bottom:1px solid #2e362f;background:#090b09}
+.weapon-frame img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;image-rendering:auto}
+.weapon-record-copy{padding:28px}
+.weapon-record-copy h2{font-size:clamp(2rem,4vw,3.6rem);margin:10px 0 18px;font-family:var(--pixel);color:#e2e2d8}
+.weapon-description p{max-width:760px;color:#b2b8ae;font-size:1rem;line-height:1.75;margin-bottom:16px}
+.weapon-state{margin-top:24px;padding:18px 20px;border-left:2px solid var(--amber);background:#111611}
+.weapon-state .state-title{font:10px var(--pixel);color:var(--amber);letter-spacing:.14em}
+.weapon-state p{margin:8px 0 0;color:#a4aba1}
+.empty-archive{max-width:900px;margin:0 auto;min-height:280px;display:grid;place-items:center;text-align:center;padding:50px;border:1px dashed #39423a;background:#0c100d}
+.empty-archive .empty-icon{font:2rem var(--pixel);color:#667166}
+.empty-archive h3{font:1.6rem var(--pixel);margin:12px 0 6px;color:#cbd0c7}
+.empty-archive p{max-width:520px;color:#838c83;margin:0 auto 10px}
+.empty-archive span:last-child{font:9px var(--pixel);color:#5f695f;letter-spacing:.12em}
+.login-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.4fr .6fr;gap:18px}
+.login-form{margin-top:28px;display:grid;gap:10px;max-width:500px}
+.login-form label{font:9px var(--pixel);letter-spacing:.14em;color:#788278}
+.login-form input{width:100%;box-sizing:border-box;border:1px solid #303930;background:#0b0e0c;color:#d4d8cf;padding:13px 14px;outline:none;font:14px var(--pixel)}
+.login-form input:focus{border-color:#697865;box-shadow:0 0 0 1px rgba(105,120,101,.25)}
+.login-status{font:9px var(--pixel);color:#778178;letter-spacing:.1em;min-height:14px}
+
+@media(max-width:650px){.state-grid,.type-grid,.contact-grid,.login-grid{grid-template-columns:1fr}.state-card,.type-card,.contact-card{min-height:210px;padding:24px}.state-card h3,.type-card h3,.contact-card h3{font-size:1.6rem}.weapon-record-copy{padding:20px}.weapon-frame{padding:6px}}
